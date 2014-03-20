@@ -36,7 +36,7 @@ namespace ImgUpload
 
             try
             {
-                using (WebResponse response = UploadHelper.PostFile(new Uri("http://www.noelshack.com/api.php"), new NameValueCollection(), filePath, null, "file", null, null))
+                using (WebResponse response = UploadHelper.PostFile(new Uri("http://www.noelshack.com/api.php"), new NameValueCollection(), filePath, null, "fichier", null, null))
                 {
                     using (StreamReader reader = new StreamReader(response.GetResponseStream()))
                     {
