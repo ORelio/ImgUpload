@@ -83,6 +83,16 @@ namespace ImgUpload.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imgur {
+            get {
+                object obj = ResourceManager.GetObject("imgur", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap jupload {
             get {
                 object obj = ResourceManager.GetObject("jupload", resourceCulture);

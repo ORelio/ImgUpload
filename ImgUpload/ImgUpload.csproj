@@ -80,6 +80,7 @@
     <None Include="img\noelshack.png" />
     <Content Include="img\casimages.png" />
     <Content Include="img\hostingpics.png" />
+    <Content Include="img\imgur.png" />
     <Content Include="img\jupload.png" />
     <Content Include="img\zupimages.png" />
     <Content Include="upload.ico" />

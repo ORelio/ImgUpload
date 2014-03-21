@@ -15,6 +15,7 @@ namespace ImgUpload
 
         public const string version = "1.4.2";
         public const string name = "ImgUpload";
+        public const string imgur_auth_id = "use-your-own";
         public static bool minecraft_mode = false;
 
         /// <summary>

@@ -22,6 +22,7 @@ namespace ImgUpload
             new HostingPicsProvider(),
             new CasimagesProvider(),
             new ZupimagesProvider(),
+            new ImgurProvider(),
             new JUploadProvider()
         };
 
