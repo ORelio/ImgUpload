@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Providers\CasimagesProvider.cs" />
+    <Compile Include="Providers\HostingPicsProvider.cs" />
+    <Compile Include="Providers\ImgurProvider.cs" />
+    <Compile Include="Providers\JUploadProvider.cs" />
+    <Compile Include="Providers\NoelShackProvider.cs" />
+    <Compile Include="Providers\ZupimagesProvider.cs" />
     <Compile Include="Translations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,7 +67,7 @@
       <DependentUpon>UploadForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UploadHelper.cs" />
-    <Compile Include="UploadProviders.cs" />
+    <Compile Include="UploadProvider.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

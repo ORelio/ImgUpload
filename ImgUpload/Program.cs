@@ -8,12 +8,12 @@ namespace ImgUpload
     static class Program
     {
         /// <summary>
-        /// Image Uploader by ORelio (c) 2012-2014.
+        /// Image Uploader by ORelio (c) 2012-2018.
         /// Allows to upload pictures to various host providers.
         /// This source code is released under the CDDL 1.0 License.
         /// </summary>
 
-        public const string version = "1.4.2";
+        public const string version = "1.5.0";
         public const string name = "ImgUpload";
         public const string imgur_auth_id = "use-your-own";
         public static bool minecraft_mode = false;

@@ -242,7 +242,15 @@ namespace ImgUpload
                 }
                 else
                 {
-                    System.Diagnostics.Process.Start(ImgURL);
+                    try
+                    {
+                        if (ImgURL.ToLower().StartsWith("http"))
+                        {
+                            System.Diagnostics.Process.Start(ImgURL);
+                        }
+                        else throw new Win32Exception();
+                    }
+                    catch (Win32Exception) { MessageBox.Show(Translations.Get("error_url"), Translations.Get("error"), MessageBoxButtons.OK, MessageBoxIcon.Error); }
                     if (singleusage) { Environment.Exit(0); }
                 }
 
@@ -350,7 +358,7 @@ namespace ImgUpload
             {
                 if (MessageBox.Show("- " + Translations.Get("about_about") + ' ' + Program.name + " -\n"
                     + Translations.Get("about_created_by") + " ORelio\n"
-                    + Translations.Get("about_website") + " : " + (Program.minecraft_mode ? "http://hellominecraft.fr/" : "http://microzoom.fr/") + "\n"
+                    + Translations.Get("about_website") + " : " + (Program.minecraft_mode ? "https://hellominecraft.fr/" : "https://microzoom.fr/") + "\n"
                     + "\n- " + Translations.Get("about_about") +' ' + Settings.UploadProviders[Settings.ImgUpload_Provider].Name + " --\n"
                     + Translations.Get("about_service_offered_by") + ' ' + Settings.UploadProviders[Settings.ImgUpload_Provider].Company + '\n'
                     + Translations.Get("about_website") + " : " + Settings.UploadProviders[Settings.ImgUpload_Provider].WebSite + '\n'

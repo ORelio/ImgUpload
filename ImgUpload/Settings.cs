@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Reflection;
+using System.IO;
 
 namespace ImgUpload
 {
     static class Settings
     {
-        private static string ImgUpload_configFile = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location) + "\\ImgUpload.cfg";
+        private static string ImgUpload_configFile = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location) + "\\ImgUpload.cfg";
         public static string ImgUpload_resizetag = "";
         public static char ImgUpload_setting = '1';
         public static int ImgUpload_Provider = 0;
@@ -15,21 +17,25 @@ namespace ImgUpload
         /// <summary>
         /// List of providers available in the software
         /// </summary>
+        public static readonly UploadProvider[] UploadProviders;
 
-        public static UploadProvider[] UploadProviders = new UploadProvider[]
+        /// <summary>
+        /// Dynamically build the provider list from the "Providers" namespace when class is being initialized
+        /// </summary>
+        static Settings()
         {
-            new NoelShackProvider(),
-            new HostingPicsProvider(),
-            new CasimagesProvider(),
-            new ZupimagesProvider(),
-            new ImgurProvider(),
-            new JUploadProvider()
-        };
+            List<UploadProvider> providerList = new List<UploadProvider>();
+            IEnumerable<Type> providerTypes = Assembly.GetExecutingAssembly().GetTypes().Where(
+                        t => String.Equals(t.Namespace, "ImgUpload.Providers", StringComparison.Ordinal)
+                     && t.IsSubclassOf(typeof(UploadProvider)));
+            foreach (var module in providerTypes)
+                providerList.Add((UploadProvider)Activator.CreateInstance(module));
+            UploadProviders = providerList.ToArray();
+        }
 
         /// <summary>
         /// Resize settings available in the software
         /// </summary>
-
         public static Dictionary<string, string> descriptions = new Dictionary<string, string>()
         {
             { "resample", Translations.Get("imgsize_resample") },
@@ -46,7 +52,6 @@ namespace ImgUpload
         /// <summary>
         /// Load program settings from a config file
         /// </summary>
-
         public static void LoadPrefs()
         {
             try
@@ -114,7 +119,6 @@ namespace ImgUpload
         /// <summary>
         /// Save program settings in a config file
         /// </summary>
-        
         public static void SavePrefs()
         {
             try

@@ -60,6 +60,7 @@ namespace ImgUpload
                 translations["error_invalid_filetype"] = "Seuls les fichiers jpeg, png, bitmap, gif et tiff sont acceptés.";
                 translations["error_file_not_found"] = "Impossible de trouver le fichier";
                 translations["error_upload"] = "Une erreur est survenue lors de l'upload de l'image.";
+                translations["error_url"] = "L'URL d'image retourné par le service d'upload est invalide.";
 
                 translations["text_choose_picture"] = "Choisir une image";
                 translations["text_image_files"] = "Fichiers images";
@@ -103,6 +104,7 @@ namespace ImgUpload
                 translations["error_invalid_filetype"] = "Only jpeg, png, bitmap, gif and tiff files are accepted.";
                 translations["error_file_not_found"] = "Cannot find the file";
                 translations["error_upload"] = "An error occured during the upload process.";
+                translations["error_url"] = "The upload service returned an invalide image URL.";
 
                 translations["text_choose_picture"] = "Choose a picture";
                 translations["text_image_files"] = "Image files";
