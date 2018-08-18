@@ -30,7 +30,7 @@ namespace ImgUpload
                      && t.IsSubclassOf(typeof(UploadProvider)));
             foreach (var module in providerTypes)
                 providerList.Add((UploadProvider)Activator.CreateInstance(module));
-            UploadProviders = providerList.ToArray();
+            UploadProviders = providerList.OrderBy(provider => provider.GetType().Name).ToArray();
         }
 
         /// <summary>

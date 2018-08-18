@@ -1,0 +1,7 @@
+; For use with https://github.com/ORelio/FileActionsManager
+[ShellExtension]
+Ext=bmp,jpg,jpeg,png,gif,tif,tiff
+Name=imgupload
+DisplayName=Envoyer avec ImgUpload
+Command=ImgUpload.exe "%1"
+Requires=ImgUpload.cfg,ImgUpload.exe

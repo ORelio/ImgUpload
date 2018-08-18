@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("By ORelio - Microzoom.fr")]
 [assembly: AssemblyProduct("ImgUpload")]
-[assembly: AssemblyCopyright("Copyright © ORelio 2012-2014")]
+[assembly: AssemblyCopyright("Copyright © ORelio 2012-2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

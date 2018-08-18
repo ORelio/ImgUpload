@@ -244,7 +244,7 @@ namespace ImgUpload
                 {
                     try
                     {
-                        if (ImgURL.ToLower().StartsWith("http"))
+                        if (ImgURL != null && ImgURL.ToLower().StartsWith("http"))
                         {
                             System.Diagnostics.Process.Start(ImgURL);
                         }

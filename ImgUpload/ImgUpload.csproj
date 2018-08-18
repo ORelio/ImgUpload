@@ -50,12 +50,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Providers\CasimagesProvider.cs" />
-    <Compile Include="Providers\HostingPicsProvider.cs" />
-    <Compile Include="Providers\ImgurProvider.cs" />
-    <Compile Include="Providers\JUploadProvider.cs" />
-    <Compile Include="Providers\NoelShackProvider.cs" />
-    <Compile Include="Providers\ZupimagesProvider.cs" />
+    <Compile Include="Providers\Casimages.cs" />
+    <Compile Include="Providers\JUpload.cs" />
+    <Compile Include="Providers\Noelshack.cs" />
+    <Compile Include="Providers\Pixenli.cs" />
+    <Compile Include="Providers\Postimage.cs" />
+    <Compile Include="Providers\Zupimages.cs" />
+    <Compile Include="Requests\HTTPRawRequest.cs" />
+    <Compile Include="Requests\RequestHelper.cs" />
+    <Compile Include="Requests\StringSplitUtils.cs" />
     <Compile Include="Translations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,7 +69,6 @@
     <Compile Include="UploadForm.Designer.cs">
       <DependentUpon>UploadForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UploadHelper.cs" />
     <Compile Include="UploadProvider.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,12 +85,12 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="img\noelshack.png" />
-    <Content Include="img\casimages.png" />
-    <Content Include="img\hostingpics.png" />
-    <Content Include="img\imgur.png" />
-    <Content Include="img\jupload.png" />
-    <Content Include="img\zupimages.png" />
+    <None Include="Img\noelshack.png" />
+    <Content Include="Img\casimages.png" />
+    <Content Include="Img\jupload.png" />
+    <Content Include="Img\pixenli.png" />
+    <None Include="Img\Postimage.png" />
+    <Content Include="Img\zupimages.png" />
     <Content Include="upload.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -118,22 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="casimages" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\casimages.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Casimages" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\Casimages.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hostingpics" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\hostingpics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="JUpload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\JUpload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imgur" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\imgur.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Noelshack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\Noelshack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jupload" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\jupload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Pixenli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\Pixenli.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="noelshack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\noelshack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Postimage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\Postimage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="zupimages" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\zupimages.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Zupimages" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\Zupimages.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
